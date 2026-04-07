@@ -1,5 +1,6 @@
 # Swasthya-Queue
 Teleconsultation Queue &amp; Triage Management System for Rural Clinics
+DEPLOYMENT LINK : https://swasthya-queue.netlify.app/
 
 # स्वास्थ्य Queue — Swasthya Queue
 
