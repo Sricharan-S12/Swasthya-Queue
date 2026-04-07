@@ -3,12 +3,13 @@ Teleconsultation Queue &amp; Triage Management System for Rural Clinics
 
 DEPLOYMENT LINK : https://swasthya-queue.netlify.app/
 
-  |<----------------------------------->|
-  |->FOR DOCTOR DASHBOARD SECURE LOGIN<-|
-  |<----------------------------------->|
-  |username : Doctor                    |
-  |password : Doctor123                 |
-  |<----------------------------------->|
+## Doctor Dashboard Login Credentials
+
+| Field      | Details     |
+|------------|-------------|
+| **Portal** | Doctor Dashboard (Secure Login) |
+| **Username** | `Doctor` |
+| **Password** | `Doctor123` |
 
 # स्वास्थ्य Queue — Swasthya Queue
 
