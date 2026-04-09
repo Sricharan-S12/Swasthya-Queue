@@ -15,7 +15,7 @@ DEPLOYMENT LINK : https://swasthya-queue.netlify.app/
 
 > **AI-powered teleconsultation & emergency triage platform for rural Primary Health Centres**
 
-Swasthya Queue is a multi-channel patient triage, queue management, and emergency referral system designed for rural PHCs (Primary Health Centres) in India. It enables instant patient assessment via Web, SMS, or USSD — requiring no smartphone or internet connection for basic access.
+Swasthya Queue is a multi-channel patient triage, queue management, and emergency referral system designed for rural PHCs (Primary Health Centres) in India. It enables instant patient assessment via Web, SMS, or USSD — requiring no smartphone or internet connection.
 
 ---
 
