@@ -56,10 +56,84 @@
     .nav { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 50; box-shadow: var(--shadow-sm); }
     .nav-inner { display: flex; gap: 8px; padding: 12px 24px; max-width: 1000px; margin: 0 auto; overflow-x: auto; scrollbar-width: none; }
     .nav-tab { padding: 10px 16px; border-radius: 100px; border: none; background: transparent; font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all 0.2s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+
+    /* ========================= */
+/* DARK MODE */
+/* ========================= */
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+/* Navbar */
+.dark-mode .nav {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+/* Navigation Buttons */
+.dark-mode .nav-tab {
+  color: #e5e5e5;
+}
+.dark-mode .nav-tab:hover {
+  background: #2a2a2a;
+  color: white;
+}
+.dark-mode .nav-tab.active {
+  background: #333;
+  color: #fff;
+}
+/* Panels */
+.dark-mode section,
+.dark-mode .panel,
+.dark-mode .card {
+  background: #1e1e1e;
+  color: white;
+}
+/* Inputs */
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+/* Tables */
+.dark-mode table {
+  background: #1e1e1e;
+  color: white;
+}
+.dark-mode th,
+.dark-mode td {
+  border-color: #444;
+}
+/* Modals */
+.dark-mode .modal,
+.dark-mode .modal-content {
+  background: #1e1e1e;
+  color: white;
+}
+/* Smooth transition */
+body,.nav,.nav-tab,.card,.panel,button,input,table,
+.modal {
+  transition: all 0.3s ease;
+}
     .nav-tab:hover { background: #F1F5F9; color: var(--text-main); }
     .nav-tab.active { background: var(--primary-light); color: var(--primary-dark); }
     .badge { font-size: 11px; padding: 2px 8px; border-radius: 100px; font-weight: 700; }
     .badge-red { background: var(--red); color: white; }
+     /* improve mobile responsiveness */
+    @media (max-width: 768px) {
+
+  .nav-inner {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .nav-tab {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+}
 
     /* === Main content === */
     .main-content { padding: 32px 0; }
@@ -306,6 +380,12 @@
         <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
         How it Works
       </button>
+
+      <!-- ADD DARK MODE BUTTON HERE -->
+  <button id="darkModeToggle" class="nav-tab">
+    🌙 Dark Mode
+  </button>
+
       <div id="google_translate_element" style="margin-left: auto; padding-right: 12px; display: flex; align-items: center;"></div>
       <div id="user-info" style="display: none; align-items: center; gap: 12px; border-left: 1px solid var(--border); padding-left: 12px;">
         <span id="user-name-display" style="font-size: 14px; font-weight: 600; color: var(--primary-dark);">User</span>
@@ -930,6 +1010,25 @@ PHC contact: +91-732-XXXXXX</div>
   </div>
 </div>
 <script>
+
+/* ========================= */
+/* DARK MODE TOGGLE */
+/* ========================= */
+
+const darkModeBtn = document.getElementById("darkModeToggle");
+
+darkModeBtn.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeBtn.innerHTML = "☀️ Light Mode";
+  } else {
+    darkModeBtn.innerHTML = "🌙 Dark Mode";
+  }
+
+});
+
 // ── REFERRAL ──
 let selHospId='hc1';
 function selHosp(id,name){
