@@ -1,4 +1,4 @@
-# Swasthya-Queue
+﻿# Swasthya-Queue
 Teleconsultation Queue &amp; Triage Management System for Rural Clinics
 
 DEPLOYMENT LINK : https://swasthya-queue.netlify.app/
@@ -160,7 +160,7 @@ The entire referral chain — bed + ambulance + notice — can be triggered in u
 
 ## Getting Started
 
-Swasthya Queue is a single-file HTML application. No build step or server required.
+Swasthya Queue is a static HTML application. No build step or server required.
 
 ```bash
 # Clone or download the project
@@ -191,7 +191,9 @@ Use these to access the secured **Doctor Dashboard** portal.
 ```
 swasthya-queue/
 │
-├── index.html              # Entire application (single-file)
+├── index.html              # Main application shell
+├── styles.css              # Extracted stylesheet
+├── app.js                  # Extracted application logic
 │
 │   Inline sections:
 │   ├── Hero & Navigation
