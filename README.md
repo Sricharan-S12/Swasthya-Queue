@@ -176,25 +176,25 @@ CLIENT_URL=http://localhost:5173
 
 ## Home Page
 
-_Add Screenshot_
+![Home Page](img/home.png)
 
 ---
 
-## Patient Dashboard
+## Clinic Dashboard
 
-_Add Screenshot_
+![Clinic Page](img/clinic.png)
 
 ---
 
 ## Admin Dashboard
 
-_Add Screenshot_
+![Doctor Page](img/admindash.png)
 
 ---
 
 ## Queue Status
 
-_Add Screenshot_
+![Queue Page](img/queue.png)
 
 ---
 
